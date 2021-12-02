@@ -99,7 +99,7 @@ def draw():
     next = current.checkNeighbour(grid)
     if next:
         next.state = True
-        stack.insert(len(stack), current)
+        stack.append(current)
         removeWalls(current, next)
         current = next
     elif len(stack) > 0:
