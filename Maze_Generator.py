@@ -124,9 +124,9 @@ def main():
             if event.type == pygame.QUIT:
                 pygame.image.save(root, f"{datetime.now()}.png")
                 running = False
-                pygame.quit()
         draw()
 
 
 if __name__ == "__main__":
     main()
+    pygame.quit()
